@@ -1,0 +1,86 @@
+/*Sass stylesheet*/
+
+$color_1: green;
+$color_2: black;
+$color_3: white;
+$color_4: #fff;
+$font-family_1: Arial, Helvetica, Sans-sans-serif;
+$background-color_1: #ededed;
+$background-color_2: #333;
+$background-color_3: #ddd;
+$background-color_4: #04AA6D;
+$background-color_5: rgba(220, 0, 0, 1);
+$background-color_6: rgba(255, 0, 0, 1);
+
+body {
+	font-family: $font-family_1;
+	background-color: $background-color_1;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	color: $color_1;
+}
+p {
+	text-align: left;
+}
+footer {
+	padding: 10px;
+	text-align: center;
+	color: $color_2;
+	position: fixed;
+	bottom: 0;
+	width: 97.5%;
+	height: 10px;
+	background: lightblue;
+}
+.topnav {
+	overflow: hidden;
+	background-color: $background-color_2;
+	position: relative;
+	#myLinks {
+		display: none;
+	}
+	a {
+		color: $color_3;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+		&:hover {
+			background-color: $background-color_3;
+			color: $color_2;
+		}
+	}
+	a.icon {
+		background: black;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+}
+.active {
+	background-color: $background-color_4;
+	color: $color_3;
+}
+.styled {
+	border: 0;
+	line-height: 2.5;
+	padding: 0 20px;
+	font-size: 1rem;
+	text-align: center;
+	color: $color_4;
+	text-shadow: 1px 1px 1px #000;
+	border-radius: 10px;
+	background-color: $background-color_5;
+	background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+	box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+	&:hover {
+		background-color: $background-color_6;
+	}
+	&:active {
+		box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+	}
+}
